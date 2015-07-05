@@ -31,7 +31,7 @@ def repeat(times):
     count = 0
     for i in range(times):
         if drop_and_check(w, h, k): count += 1
-    return times/count
+    return float(times)/count
 
 if __name__ == "__main__":
     print(repeat(int(sys.argv[1])))
